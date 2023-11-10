@@ -75,7 +75,7 @@ def main():
     df = pd.read_csv(csv_path)
 
      # get java projects
-    java_projects = df[df['language'].str.lower() == 'java'].head(3)
+    java_projects = df[df['language'].str.lower() == 'java'].head(200)
 
     # create folder for repos
     destination_folder = 'java_repos'
